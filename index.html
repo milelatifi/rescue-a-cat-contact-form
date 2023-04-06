@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rescue a cat</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <section class="contact-us-form">
+      <div class="container">
+        <img src="public/images/logo.png" alt="Cats" />
+        <h2 class="title">Contact us</h2>
+        <form>
+          <div class="form-items">
+            <label class="name" for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              required
+              aria-required="true"
+              placeholder="Enter your name"
+            />
+            <small class="d-none" id="name-help"> Name is required </small>
+          </div>
+          <div class="form-items">
+            <label class="email" for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              required
+              aria-required="true"
+              placeholder="Enter your email"
+            />
+            <small class="d-none" id="email-help">Email is required</small>
+          </div>
+          <div class="form-items">
+            <label class="question" for="text">What can we help you?</label>
+            <textarea
+              class="textarea-items"
+              id="message"
+              required
+              aria-required="true"
+              placeholder="..."
+            ></textarea>
+            <small class="d-none" id="message-help">Message is required</small>
+          </div>
+          <div class="form-items">
+            <button class="submit" type="button">
+              Send
+              <img
+                class="submit-icon"
+                src="public/icons/send.svg"
+                alt="Paper plane icon"
+              />
+            </button>
+          </div>
+        </form>
+        <div class="d-none text-center" id="thank-you-section">
+          <h2>Thank you for contacting us</h2>
+          <img src="public/icons/check-circle.svg" alt="Circle check"/>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="public/js/index.js"></script>
+</html>
